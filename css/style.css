@@ -1,0 +1,41 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+}
+}
+
+
+body {
+  /* width: 100vw; */
+  height: 100vh;
+  /* background:url('https://i.pinimg.com/originals/27/7b/ed/277bed6241f06744f58301f98ad4606a.jpg') cover; */
+  /* background: url("../img/137910.jpg") no-repeat center/cover; */
+
+}
+
+
+img {
+  transform: rotate(0);
+  /* animation: rotate 3s infinite; */
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.buttons {
+  width:100%;
+  display:flex;
+  justify-content:space-between
+
+}
+
+.btn {
+  width:50px;
+  height:50px;
+  background:salmon;
+}
