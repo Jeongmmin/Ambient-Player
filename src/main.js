@@ -17,7 +17,7 @@ audioWires.forEach((item) => {
 audioVisual.addEventListener('click', playAndPause);
 
 function playAndPause() {
-  clickSound();
+  // clickSound();
   handlePlayVideo();
   isPlaying = !isPlaying;
   handleAnimation();
