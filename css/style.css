@@ -17,6 +17,25 @@ body {
   box-shadow: 7px 7px 14px #292d42, -7px -7px 14px #535b86;
 }
 
+.flexBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -41,44 +60,23 @@ body {
   align-items: space-around;
 }
 
-.videoCentent {
+.videoContent {
   width: 45%;
 }
 
-
-video {
+.video {
   width: 90%;
   border-radius: 20px;
 }
 
-
 .songController {
   width: 20%;
-  /* pointer-events: none; */
+  justify-content: space-around;
+  text-align: center;
 }
-
 
 .footer:hover {
   display: flex;
-}
-
-.flexBox {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .buttons {
@@ -121,8 +119,11 @@ video {
 .buttons__secondBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(147deg, rgba(193,58,255,1) 0%, rgba(77,165,255,1) 70%);
-  
+  background: linear-gradient(
+    147deg,
+    rgba(193, 58, 255, 1) 0%,
+    rgba(77, 165, 255, 1) 70%
+  );
 }
 .buttons__thirdBtn {
   border: 3px solid #fff;
@@ -137,7 +138,11 @@ video {
 .buttons__fourthBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(147deg, rgba(255,174,116,1) 0%, rgba(89,1,204,1) 100%);
+  background: linear-gradient(
+    147deg,
+    rgba(255, 174, 116, 1) 0%,
+    rgba(89, 1, 204, 1) 100%
+  );
 }
 
 .inner {

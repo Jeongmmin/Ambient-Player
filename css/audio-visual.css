@@ -1,53 +1,55 @@
-.audio-visual{
+.songController span {
+  font-size: 1rem;
+  color: rgb(134, 134, 134);
+}
+
+.audio-visual {
   height: 70px;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.audio-visual .audio-wire{
+.audio-visual .audio-wire {
   height: 50%;
   margin: 0px 3px;
   padding: 0px 1px;
   background-color: rgb(221, 221, 221);
-  animation: animateUpDown .5s infinite alternate;
+  animation: animateUpDown 0.5s infinite alternate;
 }
-.songController span{
-  font-size: 1rem;
-  color: rgb(134, 134, 134);
-}
-.audio-visual .audio-wire-1{
+
+.audio-visual .audio-wire-1 {
   animation-delay: 50ms;
 }
-.audio-visual .audio-wire-2{
+.audio-visual .audio-wire-2 {
   animation-delay: 150ms;
 }
-.audio-visual .audio-wire-3{
+.audio-visual .audio-wire-3 {
   animation-delay: 300ms;
 }
-.audio-visual .audio-wire-4{
+.audio-visual .audio-wire-4 {
   animation-delay: 450ms;
 }
-.audio-visual .audio-wire-5{
+.audio-visual .audio-wire-5 {
   animation-delay: 600ms;
 }
-.audio-visual .audio-wire-6{
+.audio-visual .audio-wire-6 {
   animation-delay: 450ms;
 }
-.audio-visual .audio-wire-7{
+.audio-visual .audio-wire-7 {
   animation-delay: 300ms;
 }
-.audio-visual .audio-wire-8{
+.audio-visual .audio-wire-8 {
   animation-delay: 150ms;
 }
-.audio-visual .audio-wire-9{
+.audio-visual .audio-wire-9 {
   animation-delay: 50ms;
 }
 @keyframes animateUpDown {
-  to{
-      height: 90%;
+  to {
+    height: 90%;
   }
-  from{
-      height: 50%;
+  from {
+    height: 50%;
   }
 }

@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>👻 Ambient Player</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="./js/main.js"></script>
-</head>
-<body>
-  <div class="wrapper">
-    <section class="art"></section>
-    <section class="buttons">
-      <div class="buttons__preBtn btn"></div>
-      <div class="buttons__playBtn btn"></div>
-      <div class="buttons__nextBtn btn"></div>
-    </section>
-    <div class="arrow"> 여기</div>
-    <footer class="footer"></footer>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👻 Ambient Player</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./src/main.js"></script>
+    <!-- <script type="module" src="src/main.js" defer></script> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">Ghost Song Player</header>
+      <section class="mainContent">
+        <article class="buttons box">
+          <div class="flexBox">
+            <div class="buttons__fistBtn btn flex-row" data-index="0"></div>
+            <div class="buttons__secondBtn btn" data-index="1"></div>
+          </div>
+          <div class="flexBox">
+            <div class="buttons__thirdBtn btn" data-index="2"></div>
+            <div class="buttons__fourthBtn btn" data-index="3"></div>
+          </div>
+        </article>
+        <article class="videoContent box flex-row">
+          <video
+            class="video"
+            src="https://user-images.githubusercontent.com/82005305/193449153-201c3c12-7084-4063-9aa5-fe18ab329b19.mp4"
+            loop
+          ></video>
+        </article>
+        <article class="songController flex-column box">
+          <div class="audio-visual">
+            <div class="audio-wire audio-wire-1"></div>
+            <div class="audio-wire audio-wire-2"></div>
+            <div class="audio-wire audio-wire-3"></div>
+            <div class="audio-wire audio-wire-4"></div>
+            <div class="audio-wire audio-wire-5"></div>
+            <div class="audio-wire audio-wire-6"></div>
+            <div class="audio-wire audio-wire-7"></div>
+            <div class="audio-wire audio-wire-8"></div>
+            <div class="audio-wire audio-wire-9"></div>
+          </div>
+          <span>Click wave for play or pause!</span>
+        </article>
+      </section>
+    </div>
+  </body>
 </html>
