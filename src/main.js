@@ -1,6 +1,5 @@
 import videoData from './data.js';
 
-let isPaused = true;
 let isPlaying = false;
 
 const audioVisual = document.querySelector('.audio-visual');
@@ -18,15 +17,17 @@ audioWires.forEach((item) => {
 audioVisual.addEventListener('click', playAndPause);
 
 function playAndPause() {
+  clickSound();
   handlePlayVideo();
-  startAnimation();
+  isPlaying = !isPlaying;
+  handleAnimation();
 }
 
-function startAnimation() {
-  isPaused = !isPaused;
+function handleAnimation() {
   audioWires.forEach((item) => {
-    isPaused ? pauseAnimation(item) : runningAnimation(item);
+    isPlaying ? runningAnimation(item) : pauseAnimation(item);
   });
+  console.log(isPlaying);
 }
 
 function pauseAnimation(item) {
@@ -38,15 +39,16 @@ function runningAnimation(item) {
 }
 
 function startPlayer(event) {
+  clickSound();
   handlePlayVideo();
   changeVideo(event);
-  audioWires.forEach((item) => runningAnimation(item));
+  isPlaying = true;
+  handleAnimation();
 }
 
 function handlePlayVideo() {
-  isPlaying = !isPlaying;
   const video = document.querySelector('.video');
-  isPlaying ? video.play() : video.pause();
+  isPlaying ? video.pause() : video.play();
 }
 
 function changeVideo(event) {
@@ -63,4 +65,10 @@ function displayVideo(index) {
   loop
   autoplay
 ></video>`);
+}
+
+function clickSound() {
+  const click = new Audio('sound/mouseClick.mp3');
+  click.play();
+  console.log(click);
 }

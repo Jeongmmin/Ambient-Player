@@ -102,6 +102,7 @@ body {
   cursor: pointer;
 }
 
+
 .none {
   display: none;
 }
@@ -145,12 +146,3 @@ body {
   );
 }
 
-.inner {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1.2em;
-  border-radius: 50%;
-  background: #383d5a;
-  box-shadow: inset 5px 5px 13px #292d43, inset -5px -5px 13px #474d71;
-  border: 3px solid #474d71;
-}

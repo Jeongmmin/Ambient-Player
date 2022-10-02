@@ -4,8 +4,8 @@
 }
 
 .audio-visual {
-  height: 70px;
-  width: 200px;
+  height: 6rem;
+  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
 .audio-visual .audio-wire {
   height: 50%;
   margin: 0px 3px;
-  padding: 0px 1px;
+  padding: 0px 0.16rem;
   background-color: rgb(221, 221, 221);
   animation: animateUpDown 0.5s infinite alternate;
 }
