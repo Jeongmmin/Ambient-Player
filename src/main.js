@@ -22,7 +22,6 @@ function playAndPause() {
   isPlaying = !isPlaying;
   handleAnimation();
 }
-
 function handleAnimation() {
   audioWires.forEach((item) => {
     isPlaying ? runningAnimation(item) : pauseAnimation(item);
