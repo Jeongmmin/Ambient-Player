@@ -110,39 +110,23 @@ body {
 .buttons__fistBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(
-    147deg,
-    rgba(255, 210, 95, 1) 0%,
-    rgba(255, 75, 94, 1) 70%
-  );
+  background: var(--gradient-color-1);
 }
 
 .buttons__secondBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(
-    147deg,
-    rgba(193, 58, 255, 1) 0%,
-    rgba(77, 165, 255, 1) 70%
-  );
+  background: var(--gradient-color-2);
 }
 .buttons__thirdBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(
-    147deg,
-    rgba(85, 224, 253, 1) 0%,
-    rgba(172, 234, 82, 1) 70%
-  );
+  background: var(--gradient-color-3);
 }
 
 .buttons__fourthBtn {
   border: 3px solid #fff;
   font-weight: bold;
-  background: linear-gradient(
-    147deg,
-    rgba(255, 174, 116, 1) 0%,
-    rgba(89, 1, 204, 1) 100%
-  );
+  background: var(--gradient-color-4);
 }
 
