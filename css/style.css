@@ -1,5 +1,9 @@
 @import './reset.css';
 @import './variables.css';
+@import './flex.css';
+
+@import './btn.css';
+@import './video.css';
 @import './audio-visual.css';
 
 * {
@@ -8,48 +12,25 @@
 
 body {
   height: 100vh;
-  background-color: #323650;
-}
-
-.box {
-  border-radius: 41px;
-  background: linear-gradient(145deg, #383d5a, #42496b);
-  box-shadow: 7px 7px 14px #292d42, -7px -7px 14px #535b86;
-}
-
-.flexBox {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--background-color);
 }
 
 .wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .header {
   height: 15%;
   display: flex;
-  color: #fff;
+  color: var(--white);
   font-size: 3rem;
+}
+
+.box {
+  border-radius: 41px;
+  background: var(--box-background);
+  box-shadow: var(--box-shadow);
 }
 
 .mainContent {
@@ -60,73 +41,6 @@ body {
   align-items: space-around;
 }
 
-.videoContent {
-  width: 45%;
-}
-
-.video {
-  width: 90%;
-  border-radius: 20px;
-}
-
-.songController {
-  width: 20%;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.footer:hover {
-  display: flex;
-}
-
-.buttons {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.btn {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 1.5em;
-  background: linear-gradient(145deg, #383d5a, #42496b);
-  box-shadow: 5px 5px 10px #323650, -5px -5px 10px #4a5278;
-  transition: all 0.5s ease-in-out;
-}
-
-.btn:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-
-
 .none {
   display: none;
 }
-
-.buttons__fistBtn {
-  border: 3px solid #fff;
-  font-weight: bold;
-  background: var(--gradient-color-1);
-}
-
-.buttons__secondBtn {
-  border: 3px solid #fff;
-  font-weight: bold;
-  background: var(--gradient-color-2);
-}
-.buttons__thirdBtn {
-  border: 3px solid #fff;
-  font-weight: bold;
-  background: var(--gradient-color-3);
-}
-
-.buttons__fourthBtn {
-  border: 3px solid #fff;
-  font-weight: bold;
-  background: var(--gradient-color-4);
-}
-

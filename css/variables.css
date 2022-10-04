@@ -1,4 +1,14 @@
 :root {
+  --box-background: linear-gradient(145deg, #383d5a, #42496b);
+  --box-shadow: 7px 7px 14px #292d42, -7px -7px 14px #535b86;
+
+  /* Color */
+  --white: #fff;
+  --gray: #868686;
+
+  --wire-color: #dddddd;
+  --background-color: #323650;
+  --btn-border: 3px solid #fff;
   --gradient-color-1: linear-gradient(
     147deg,
     rgba(255, 210, 95, 1) 0%,

@@ -1,0 +1,34 @@
+.buttons {
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 5rem;
+  height: 5rem;
+  border: var(--btn-border);
+  border-radius: 1.5em;
+  box-shadow: 5px 5px 10px #323650, -5px -5px 10px #4a5278;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.buttons__fistBtn {
+  background: var(--gradient-color-1);
+}
+
+.buttons__secondBtn {
+  background: var(--gradient-color-2);
+}
+.buttons__thirdBtn {
+  background: var(--gradient-color-3);
+}
+
+.buttons__fourthBtn {
+  background: var(--gradient-color-4);
+}
